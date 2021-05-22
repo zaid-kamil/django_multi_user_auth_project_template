@@ -13,6 +13,12 @@ BAREBONES template for django project development.
 ### register
 <img src="static\images\demo\3.png">
 
+### client register
+<img src="static\images\demo\3.1.png">
+
+### lawyer register
+<img src="static\images\demo\3.2.png">
+
 ### reset password
 <img src="static\images\demo\4.png">
 
@@ -21,7 +27,6 @@ BAREBONES template for django project development.
 
 ### change password
 <img src="static\images\demo\6.png">
-
 
 #### install all libraries
 ```
