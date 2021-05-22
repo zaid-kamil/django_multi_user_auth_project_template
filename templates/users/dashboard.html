@@ -1,0 +1,63 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+
+{% block css %}
+<style>
+    body{
+        height: 100vh;
+        background-image: url('http://satyr.io/1000x600/32?text=template');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .wrapper{
+        background-color: rgb(216, 222, 228); 
+    }
+    .sideimg{
+        background-image: url("{% static 'img/bg.jpg' %} ");
+        background-position: right;
+        height: 100vh;
+    }
+    
+</style>
+{% endblock css %}
+
+{% block content %}
+<div class="container-fluid  wrapper">
+    <div class="row">
+        <div class="col-8">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col">
+                        Hello, <b>{{ user.username|default:'Guest' }} </b>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 sideimg">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-5">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <h4 class="card-title">Something very cool</h4>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio hic veritatis delectus aliquid pariatur fugit obcaecati, rem ullam laboriosam ipsa nulla. Ea soluta ducimus odio numquam, quasi eveniet nihil maxime.</p>
+                            </div>
+                        </div>
+                        <div class="card mx-auto mt-3">
+                            <div class="card-body">
+                                <h4 class="card-title">Something very cool</h4>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio hic veritatis delectus aliquid pariatur fugit obcaecati, rem ullam laboriosam ipsa nulla. Ea soluta ducimus odio numquam, quasi eveniet nihil maxime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

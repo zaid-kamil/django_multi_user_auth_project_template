@@ -1,0 +1,1 @@
+app that contains all logic for user authentication and authorization

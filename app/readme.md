@@ -1,0 +1,1 @@
+the app where all the basic pages of website will be

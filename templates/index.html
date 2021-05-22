@@ -1,0 +1,27 @@
+{% extends 'layout/base.html' %}
+
+
+{% block css %}
+<style>
+    body{
+        height: 100vh;
+        background-image: url('http://satyr.io/1000x600/72?text=digipodium');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .alert-danger ul {
+        list-style: none;
+        padding-left: 0;
+    }
+</style>
+{% endblock css %}
+    
+{% block content %}
+   <div class="container">
+       <div class="row">
+           <div class="col mx-auto my-5 text-center">
+            <h1>Welcome to template website, with multi user authentication</h1> 
+           </div>
+       </div>
+   </div>
+{% endblock content %}

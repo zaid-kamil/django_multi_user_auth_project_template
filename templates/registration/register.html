@@ -1,0 +1,47 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block css %}
+<style>
+    body{
+        height: 100vh;
+        background-image: url('http://satyr.io/1000x600/32?text=digipodium');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .alert-danger ul {
+        list-style: none;
+        padding-left: 0;
+    }
+</style>
+{% endblock css %}
+
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron my-5">
+        <h1 class="">Register Now</h1>
+       
+        <p class="lead">
+            <a class="btn btn-primary btn-sm" href="{% url 'client_register' %}" role="button">Client signup</a>
+            <a class="btn btn-primary btn-sm" href="{% url 'lawyer_register' %}" role="button">Lawyer signup</a>
+        </p> 
+        
+    </div>
+</div>
+{% endblock content %}
+
+
+{% block js %}
+<script>
+    $(function () {
+        anime({
+            targets: '.formarea',
+            translateY: '10%'
+        });
+    });
+</script>
+{% endblock js %}
+
