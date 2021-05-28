@@ -18,6 +18,7 @@ class ClientSignUpForm(UserCreationForm):
         user.save()
         client = Client.objects.create(user=user)
         client.gender = self.cleaned_data.get('gender')
+        client.save()
 
 class LawyerSignUpForm(UserCreationForm):
 
@@ -40,3 +41,4 @@ class LawyerSignUpForm(UserCreationForm):
         laywer.lawyertype = self.cleaned_data.get('lawyertype')
         laywer.experience = self.cleaned_data.get('experience')
         laywer.city = self.cleaned_data.get('city')
+        laywer.save()
